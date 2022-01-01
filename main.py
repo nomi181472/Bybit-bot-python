@@ -9,7 +9,7 @@ while True:
     now=datetime.utcnow()
     unixtime=calendar.timegm(now.utctimetuple())
     since= unixtime-60*60*24*200
-    response =session.(symbol='BTCUSD',interval="D",**{'from':since})
+    response =session.query_kline(symbol='BTCUSD',interval="D",**{'from':since})
     responseResult=response["result"]
     df=pd.DataFrame(responseResult)
     df=df["close"]
