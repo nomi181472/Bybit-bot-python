@@ -3,8 +3,8 @@ from pybit import HTTP
 from datetime import datetime
 import time
 import calendar
-session= HTTP(endpoint='https://api.bybit.com',
-              api_key="uZ9DH5FCu9P2QQn6IC",api_secret="QiwSrSERo1tlYzR06c5sfC4v4tK6rGQWkuuh")
+session= HTTP(endpoint='',
+              api_key="",api_secret="")
 while True:
     now=datetime.utcnow()
     unixtime=calendar.timegm(now.utctimetuple())
